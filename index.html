@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практичні завдання</title>
+  <style>
+    #validation-input {
+      border: 3px solid #bdbdbd;
+    }
+    
+    #validation-input.valid {
+      border-color: #4caf50;
+    }
+    
+    #validation-input.invalid {
+      border-color: #f44336;
+    }
+    
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Завдання 1: Зміна кольору фону</h2>
+    <form>
+      <p>Choose a color:</p>
+      <label>
+        <input type="radio" name="color" value="red" checked />
+        Red
+      </label>
+      <label>
+        <input type="radio" name="color" value="white" />
+        White
+      </label>
+      <label>
+        <input type="radio" name="color" value="green" />
+        Green
+      </label>
+    </form>
+  </section>
+  
+  <section>
+    <h2>Завдання 2: Привітання</h2>
+    <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+  </section>
+  
+  <section>
+    <h2>Завдання 3: Валідація інпута</h2>
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символів"
+    />
+  </section>
+  
+  <section>
+    <h2>Завдання 4: Зміна розміру тексту</h2>
+    <input id="font-size-control" type="range" min="10" max="50" value="16" />
+    <br />
+    <span id="text">Абракадабра!</span>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
